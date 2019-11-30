@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		773A67302388257E001762B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A672F2388257E001762B4 /* AppDelegate.swift */; };
-		773A67322388257E001762B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A67312388257E001762B4 /* ViewController.swift */; };
-		773A67352388257E001762B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773A67332388257E001762B4 /* Main.storyboard */; };
 		773A673723882581001762B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 773A673623882581001762B4 /* Assets.xcassets */; };
 		773A673A23882581001762B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 773A673823882581001762B4 /* LaunchScreen.storyboard */; };
 		773A674523882581001762B4 /* Wheather_LoggerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A674423882581001762B4 /* Wheather_LoggerTests.swift */; };
+		773A6761238826D0001762B4 /* WheatherLogsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773A6760238826D0001762B4 /* WheatherLogsView.xib */; };
+		773A6763238826E8001762B4 /* WheatherLogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A6762238826E8001762B4 /* WheatherLogsViewController.swift */; };
+		773A676623882A64001762B4 /* WheatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773A676523882A64001762B4 /* WheatherCell.xib */; };
+		773A676823882A7D001762B4 /* WeatherCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773A676723882A7D001762B4 /* WeatherCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +30,16 @@
 /* Begin PBXFileReference section */
 		773A672C2388257E001762B4 /* Wheather Logger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wheather Logger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		773A672F2388257E001762B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		773A67312388257E001762B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		773A67342388257E001762B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		773A673623882581001762B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		773A673923882581001762B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		773A673B23882581001762B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		773A674023882581001762B4 /* Wheather LoggerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wheather LoggerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		773A674423882581001762B4 /* Wheather_LoggerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheather_LoggerTests.swift; sourceTree = "<group>"; };
 		773A674623882581001762B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		773A6760238826D0001762B4 /* WheatherLogsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WheatherLogsView.xib; sourceTree = "<group>"; };
+		773A6762238826E8001762B4 /* WheatherLogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheatherLogsViewController.swift; sourceTree = "<group>"; };
+		773A676523882A64001762B4 /* WheatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WheatherCell.xib; sourceTree = "<group>"; };
+		773A676723882A7D001762B4 /* WeatherCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,10 @@
 		773A672E2388257E001762B4 /* Wheather Logger */ = {
 			isa = PBXGroup;
 			children = (
-				773A672F2388257E001762B4 /* AppDelegate.swift */,
-				773A67312388257E001762B4 /* ViewController.swift */,
-				773A67332388257E001762B4 /* Main.storyboard */,
-				773A673623882581001762B4 /* Assets.xcassets */,
-				773A673823882581001762B4 /* LaunchScreen.storyboard */,
+				773A6752238825DF001762B4 /* App */,
+				773A6751238825B4001762B4 /* Screen */,
+				773A6750238825A8001762B4 /* Network */,
+				773A674F2388259C001762B4 /* Sources */,
 				773A673B23882581001762B4 /* Info.plist */,
 			);
 			path = "Wheather Logger";
@@ -94,6 +97,153 @@
 				773A674623882581001762B4 /* Info.plist */,
 			);
 			path = "Wheather LoggerTests";
+			sourceTree = "<group>";
+		};
+		773A674F2388259C001762B4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				773A673623882581001762B4 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		773A6750238825A8001762B4 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		773A6751238825B4001762B4 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				773A675523882616001762B4 /* Launch */,
+				773A6754238825FF001762B4 /* WheatherDetails */,
+				773A6753238825E9001762B4 /* WheatherLogs */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		773A6752238825DF001762B4 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				773A672F2388257E001762B4 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		773A6753238825E9001762B4 /* WheatherLogs */ = {
+			isa = PBXGroup;
+			children = (
+				773A675F238826AE001762B4 /* Router */,
+				773A675E238826A0001762B4 /* Interactor */,
+				773A675D2388269A001762B4 /* Presenter */,
+				773A675C23882696001762B4 /* View */,
+				773A675B2388268E001762B4 /* Entity */,
+			);
+			path = WheatherLogs;
+			sourceTree = "<group>";
+		};
+		773A6754238825FF001762B4 /* WheatherDetails */ = {
+			isa = PBXGroup;
+			children = (
+				773A675A23882659001762B4 /* Entity */,
+				773A675923882654001762B4 /* Presenter */,
+				773A67582388264F001762B4 /* Router */,
+				773A675723882642001762B4 /* Interactor */,
+				773A67562388263D001762B4 /* View */,
+			);
+			path = WheatherDetails;
+			sourceTree = "<group>";
+		};
+		773A675523882616001762B4 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				773A673823882581001762B4 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		773A67562388263D001762B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		773A675723882642001762B4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		773A67582388264F001762B4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		773A675923882654001762B4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		773A675A23882659001762B4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		773A675B2388268E001762B4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		773A675C23882696001762B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				773A676423882A4D001762B4 /* Cell */,
+				773A6760238826D0001762B4 /* WheatherLogsView.xib */,
+				773A6762238826E8001762B4 /* WheatherLogsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		773A675D2388269A001762B4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		773A675E238826A0001762B4 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		773A675F238826AE001762B4 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		773A676423882A4D001762B4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				773A676523882A64001762B4 /* WheatherCell.xib */,
+				773A676723882A7D001762B4 /* WeatherCellController.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,9 +327,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				773A6761238826D0001762B4 /* WheatherLogsView.xib in Resources */,
+				773A676623882A64001762B4 /* WheatherCell.xib in Resources */,
 				773A673A23882581001762B4 /* LaunchScreen.storyboard in Resources */,
 				773A673723882581001762B4 /* Assets.xcassets in Resources */,
-				773A67352388257E001762B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				773A67322388257E001762B4 /* ViewController.swift in Sources */,
+				773A6763238826E8001762B4 /* WheatherLogsViewController.swift in Sources */,
+				773A676823882A7D001762B4 /* WeatherCellController.swift in Sources */,
 				773A67302388257E001762B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,14 +373,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		773A67332388257E001762B4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				773A67342388257E001762B4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		773A673823882581001762B4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
